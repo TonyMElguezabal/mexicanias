@@ -130,18 +130,18 @@ body {
   position: absolute;
   top: 70%;
   right: 0;
-  background: var(--primaryColor);
+  background: $primaryColor;
   border: none;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: $mainSpacing;
   font-weight: bold;
-  transition: var(--mainTransition);
+  transition: $maintransition;
   transform: translateX(101%);
   cursor: pointer;
 }
 .bag-btn:hover {
-  color: var(--mainWhite);
+  color: $mainWhite;
 }
 .fa-shopping-cart {
   margin-right: 0.5rem;
@@ -153,7 +153,7 @@ body {
   display: block;
   width: 100%;
   min-height: 12rem;
-  transition: var(--mainTransition);
+  transition: $maintransition;
 }
 .img-container:hover .product-img {
   opacity: 0.5;
@@ -163,14 +163,14 @@ body {
   text-transform: capitalize;
   font-size: 1.1rem;
   margin-top: 1rem;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: $mainSpacing;
   text-align: center;
 }
 
 .product h4 {
   margin-top: 0.7rem;
-  letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  letter-spacing: $mainSpacing;
+  color: $primaryColor;
   text-align: center;
 }
 

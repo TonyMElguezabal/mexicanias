@@ -157,21 +157,21 @@ body {
   position: absolute;
   top: 70%;
   right: 0;
-  background: var(--primaryColor);
+  background: #805700;
   border: none;
   text-transform: uppercase;
   padding: 0.5rem 0.75rem;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 0.1rem;
   font-weight: bold;
-  -webkit-transition: var(--mainTransition);
-  transition: var(--mainTransition);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   -webkit-transform: translateX(101%);
           transform: translateX(101%);
   cursor: pointer;
 }
 
 .bag-btn:hover {
-  color: var(--mainWhite);
+  color: #fff;
 }
 
 .fa-shopping-cart {
@@ -187,8 +187,8 @@ body {
   display: block;
   width: 100%;
   min-height: 12rem;
-  -webkit-transition: var(--mainTransition);
-  transition: var(--mainTransition);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .img-container:hover .product-img {
@@ -199,14 +199,14 @@ body {
   text-transform: capitalize;
   font-size: 1.1rem;
   margin-top: 1rem;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
 .product h4 {
   margin-top: 0.7rem;
-  letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  letter-spacing: 0.1rem;
+  color: #805700;
   text-align: center;
 }
 
