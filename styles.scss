@@ -7,15 +7,7 @@ $mainGrey: #222;
 $mainSpacing: 0.1rem;
 $maintransition: all 0.3s linear;
 $bgc: rgba(228, 85, 50, 0.884);
-/*
-:root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
-  --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
-}*/
+
 * {
   margin: 0;
   padding: 0;
@@ -55,15 +47,7 @@ body {
   position: relative;
   cursor: pointer;
 }
-.cart-items {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: $primaryColor;
-  padding: 0 5px;
-  border-radius: 30%;
-  color: $mainWhite;
-}
+
 /* --------------- End of Navbar ---------------- */
 /* --------------- Hero ---------------- */
 .hero {

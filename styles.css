@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-/*
-:root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
-  --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -62,16 +53,6 @@ body {
 .cart-btn {
   position: relative;
   cursor: pointer;
-}
-
-.cart-items {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: #805700;
-  padding: 0 5px;
-  border-radius: 30%;
-  color: #fff;
 }
 
 /* --------------- End of Navbar ---------------- */
