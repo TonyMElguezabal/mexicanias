@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
-$primaryColor: rgb(128, 87, 0);
+$primaryColor: rgb(23, 255, 54);
+$secondaryColor: rgb(247, 7, 7);
 $mainWhite: #fff;
 $mainBlack: #000;
 $mainGrey: #222;
 $mainSpacing: 0.1rem;
 $maintransition: all 0.3s linear;
-$bgc: rgba(228, 85, 50, 0.884);
+$bgc: rgba(255, 16, 16, 0.884);
 
 * {
   margin: 0;
@@ -21,6 +22,8 @@ body {
 
 /* --------------- Navbar ---------------- */
 .navbar {
+  border: 2px solid $mainBlack;
+  padding: 25px;
   position: sticky;
   top: 0;
   height: 60px;
@@ -46,6 +49,14 @@ body {
 .cart-btn {
   position: relative;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  nav .bag-btn {
+    color: red;
+    text-decoration: black;
+    padding-right: 10px;
+  }
 }
 
 /* --------------- End of Navbar ---------------- */
@@ -84,11 +95,14 @@ body {
   background: transparent;
   color: $primaryColor;
 }
+
 /* --------------- End of Hero ---------------- */
 /* --------------- Products ---------------- */
 
 .products {
   padding: 4rem 0;
+  // background: url("./images/Products.jpg") center/cover no-repeat;
+  //  opacity: 0.5;
 }
 .section-title h2 {
   text-align: center;
@@ -138,6 +152,7 @@ body {
   width: 100%;
   min-height: 12rem;
   transition: $maintransition;
+  border: 2px solid $mainBlack;
 }
 .img-container:hover .product-img {
   opacity: 0.5;
