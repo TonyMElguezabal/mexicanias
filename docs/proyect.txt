@@ -1,0 +1,6 @@
+Nombre proyecto: Mexicanias
+Integrantes: Jose Antonio Munoz
+Problema: Una pagina donde puedan comprarse cualquier tipo de artesania mexicana en el mundo, la idea es presentar una opcion para cualquier parte del mundo
+Solucion: Pagina con un backend en mongo y un CDN actualizado casi en tiempo real
+Ejecutacion: HTML, CSS, Mongodb
+Dificultades: Tiempos de refresh en items o productos
