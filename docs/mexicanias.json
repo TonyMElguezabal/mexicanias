@@ -1,0 +1,114 @@
+------ SUPPLIERS ---- Catalogo (no tiene referencias) YA
+  db.supplier.insertOne({
+    "name": "Miguel tonala",
+    "address": "Av. de la mancha 1351",
+    "cellphone": "33130121234",
+    "active": true,
+    "type": "1"
+  })  
+  db.supplier.insertOne({
+    "name": "Tovar de Medrano",
+    "address": "Calle medrano 345, zona verstir",
+    "cellphone": "33134911234",
+    "active": true,
+    "type": "1"
+  })
+
+
+------ CATEGORIES ---- Catalogo (no tiene referencias) YA 
+  db.categories.insertOne({
+    "desc": "Jarron"
+  })
+  db.categories.insertOne({
+    "desc": "Olla"
+  })
+  db.categories.insertOne({
+    "desc": "Artesania"
+  })
+  db.categories.insertOne({
+    "desc": "Arte"
+  })
+  db.categories.insertOne({
+    "desc": "Otros"
+  })
+
+------ STATUS ---- Catalogo (no tiene referencias) YA
+  db.status.insertOne({
+    "desc": "En progreso"
+  })
+  db.status.insertOne({
+    "desc": "Ordenado"
+  })
+  db.status.insertOne({
+    "desc": "Pagado"
+  })
+  db.status.insertOne({
+    "desc": "Enviado"
+  })
+  db.status.insertOne({
+    "desc": "Entregado"
+  })
+
+  
+------ ORDERS, es un solo record de "Admin" status "En progreso" YA
+db.orders.insertOne({
+    "userid": ObjectId("5ea5e6327037caee01cd9367"),
+    "orderdate": new Date().toLocaleDateString(),
+    "total": 100,
+    "discount": 10,
+    "statusid": ObjectId("5ea5f2d87037caee01cd936c")
+  })
+  
+
+------ USERS ---- son 3 usuarios, el admin es 1  YA
+db.users.insertOne({
+  "name": "Cliente normal",
+  "type": 2,
+  "email": "cualquier.persona@gmail.com",
+  "password": "1234",
+  "joindate": "04/18/2020", 
+  "rank": 1
+})
+db.users.insertOne({
+    "name": "Pedro Vargas",
+    "type": 1,
+    "email": "pedrovargas@gmail.com",
+    "password": "1234",
+    "joindate": "04/18/2020", 
+    "rank": 1
+  })
+db.users.insertOne({
+    "name": "admin",
+    "type": 1,
+    "email": "jose.elguezabal@gmail.com",
+    "password": "4321",
+    "joindate": new Date().toLocaleDateString(), 
+    "rank": 1
+})
+
+
+
+------ ITEMS ---- 2 items o productos diferente categoria mismo proveedor. YA
+db.items.insertOne({
+  "desc": "Jarron contemporaneo",
+  "img": "URL: Here goes an URL from CDN",
+  "dateadd": new Date().toLocaleDateString(),
+  "active": true,
+  "quantity": 10, 
+  "supplierid": ObjectId("5ea60c837037caee01cd9372"),
+  "cost": 200,
+  "price": 100,
+  "categoryid": ObjectId("5ea5f5bd7037caee01cd936d")
+})
+
+db.items.insertOne({
+    "desc": "Artesania de Tonala obsidiana negra",
+    "img": "URL: Here goes an URL from CDN",
+    "dateadd": new Date().toLocaleDateString(),
+    "active": true,
+    "quantity": 3, 
+    "supplierid": ObjectId("5ea60c837037caee01cd9372"),
+    "cost": 1500,
+    "price": 720,
+    "categoryid": ObjectId("5ea5f5bd7037caee01cd936f")
+  })
