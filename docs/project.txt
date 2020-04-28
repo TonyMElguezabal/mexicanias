@@ -1,0 +1,8 @@
+Nombre proyecto: Mexicanias
+Integrantes: Jose Antonio Munoz
+Problema: En muchas partes de Mexico hay artesanias que solo son exhibidas localmente y que si fueran expuestas en una pagina a nivel mundial mucha gente podria comprarlas, muchas de ellas artesanias de edicion limitada incluso piezas unicas
+Solucion: Pagina con un backend en mongo, Javascript y un CDN actualizado casi en tiempo real para que refleje nuevos productos y puedan ser expuestos y vendidos en cualquier parte del mundo
+Ejecutacion: HTML, CSS, Mongodb, backend con MongoDB
+Dificultades: Tiempos de refresh en items o productos
+Conclusion: Sera una herramienta webpage, que tenga conexion con un CDN y una base de datos en MongoDB que pueda tener articulos y artesanias presentadas con buena imagen y fotografia
+Mejoras: Una de las principales herramientas vitales para el exito del proyecto es poder medir lo mas rapida y exactamente lo que la gente busca y lo que los artesanos ofrecen, para ello propongo en una fase 2 utilizar herramientas como Google Analytics y Google Bigquery
