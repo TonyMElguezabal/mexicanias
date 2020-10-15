@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 const port = 3030;
 
-const UserModel = require("./models/userModel");
+//const UserModel = require("./models/userModel");
 
 mongoose
   .connect(
@@ -48,3 +48,9 @@ app.post("/user", (req, res) => {
   const newUser = new UserModel(req.body);
   newUser.save((err, user) => {
     if (err) {
+      console.log(err)
+      return
+    };
+  })
+})
+
